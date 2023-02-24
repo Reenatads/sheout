@@ -11,7 +11,7 @@ h1 {
 
 h2 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-size: 24px; 
   font-weight: 600;
   color: #333333;
   margin: 0;
@@ -29,28 +29,80 @@ fieldset {
   border: none;
 }
 
-/* Layout */
-
-.create-account-button input[type="button"] {
+input[type="button"] {
   border: 1px solid #3b3937;
   background-color: #3b3937;
   color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
-  padding: 05px 10px;
   cursor: pointer;
   display: inline-flex;
+}
+
+input[type="button"]:hover {
+  background-color: transparent;
+  color: #3b3937;
+}
+
+.return-button{
+float: inline-start;
+}
+
+/* Layout */
+
+header img[src="/sheout/html/images/LOGO_SHEOUT.png"] {
+  width: 300px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+nav.nav-menu {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+nav.nav-menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.nav-menu li {
+  margin: 0 20px;
+}
+
+nav.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.create-account-button input[type="button"] {
   float: right;
+  padding: 05px 10px;
   margin-inline: 5px;
 }
 
 .create-account-button input:first-child {
   margin-bottom: 10px;
-}
-
-.create-account-button input[type="button"]:hover {
-  background-color: transparent;
-  color: #3b3937;
 }
 
 .login-container{
@@ -65,7 +117,93 @@ fieldset {
   display: none;
 }
 
-/*TO REVIEW*/
+.featured-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.featured-products h2 {
+  text-align: center;
+  width: 100%; 
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.product-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  margin: 20px 0 10px;
+}
+
+.product-card p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff4500;
+  margin: 10px 0 20px;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.icons div {
+  margin: 10px;
+}
+
+/*Social proof*/
+.social-proof {
+  background-color: #f8f8f8;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonial {
+  font-style: italic;
+  margin: 50px;
+}
+
+.testimonial p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.testimonial cite {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form-style{
+  background-color: #f8f8f8;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/*TO REVIEW
 
 .login-form {
   max-width: 500px;
@@ -100,49 +238,6 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-}
-
-nav.nav-menu {
-  display: flex;
-  align-items: center;
-}
-
-nav.nav-menu ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav.nav-menu li {
-  margin: 0 20px;
-}
-
-nav.nav-menu a {
-  text-decoration: none;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-header img[src="/sheout/html/images/LOGO_SHEOUT.png"] {
-  width: 300px;
-  height: auto;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-  background-color: #fff;
-  border-bottom: 1px solid #ebebeb;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  color: #ffffff;
 }
 
 section {
@@ -195,35 +290,10 @@ section.user-login input[type="submit"] {
   cursor: pointer;
 }
 
-.product-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border: 1px solid #f5f5f5;
-  border-radius: 4px;
-}
-
-.product-card img {
-  max-width: 100%;
-}
-
-.product-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #333333;
-  margin: 20px 0 10px;
-}
-
-.product-card p {
-  font-size: 18px;
-  font-weight: 600;
-  color: #ff4500;
-  margin: 10px 0 20px;
-}
+*/
 
 /* Color */
+/*
 a {
   color: #333333;
   text-decoration: none;
@@ -247,3 +317,4 @@ button {
 button:hover {
   background-color: #f63b00;
 }
+*/
