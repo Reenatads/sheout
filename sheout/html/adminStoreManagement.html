@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin Store Management - SHEOUT</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <script src="../js/..."></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="">
+          <img src="/sheout/html/images/LOGO_SHEOUT.png" />
+        </a>
+      </div>
+    </header>
+    <br /><br />
+    <!-- Header - End -->
+    <h1>Admin Store Management</h1>
+
+    <div>
+      <h2>Stores Awaiting Approval</h2>
+      <table>
+        <th>
+          <tr>
+            <th>Store Name</th>
+            <th>Store Address</th>
+            <th>Store Phone</th>
+            <th>Action</th>
+          </tr>
+        </th>
+        <tb>
+          <!-- Sample data for demonstration purposes -->
+          <tr>
+            <td>Store A</td>
+            <td>123 Main St</td>
+            <td>99 99999999</td>
+            <td>
+              <form method="post" action="">
+                <input type="hidden" name="store_id" value="1" />
+                <button type="submit" name="action" value="approve">
+                  Approve
+                </button>
+              </form>
+            </td>
+          </tr>
+          <tr>
+            <td>Store B</td>
+            <td>456 Oak St</td>
+            <td>(555) 555-5555</td>
+            <td>
+              <form method="post" action="">
+                <input type="hidden" name="store_id" value="2" />
+                <button type="submit" name="action" value="approve">
+                  Approve
+                </button>
+              </form>
+            </td>
+          </tr>
+        </tb>
+      </table>
+    </div>
+
+    <!-- Update store information form -->
+    <h2>Update Store Information</h2>
+    <form method="post" action="">
+      <fieldset>
+        <select name="store_id">
+          <option value="">Select Store</option>
+          <option value="1">Store 1</option>
+          <option value="2">Store 2</option>
+          <option value="3">Store 3</option>
+          <!-- Add more options here for all stores -->
+        </select>
+        <br />
+        <input type="text" name="store_name" placeholder="Store Name" />
+        <input type="text" name="store_address" placeholder="Store Address" />
+        <input
+          type="text"
+          name="store_phone"
+          placeholder="Store Phone Number"
+        />
+        <input type="submit" value="Update Store Information" />
+      </fieldset>
+    </form>
+    <br />
+
+    <!-- Cancel store subscription form -->
+    <h2>Cancel Store Subscription</h2>
+    <form method="post" action="">
+      <fieldset>
+        <select name="store_id">
+          <option value="">Select Store</option>
+          <option value="1">Store 1</option>
+          <option value="2">Store 2</option>
+          <option value="3">Store 3</option>
+          <!-- Add more options here for all stores -->
+        </select>
+        <br />
+        <input type="submit" value="Cancel Subscription" />
+      </fieldset>
+    </form>
+    <br />
+
+    <div>
+      <!-- Search options -->
+      <h2>Search Stores</h2>
+      <label for="search-type">Search By:</label>
+      <select id="search-type">
+        <option value="all">Show All</option>
+        <option value="letter">Initial Letter</option>
+      </select>
+      <br /><br />
+
+      <!-- Display all stores table -->
+      <h2>All Stores</h2>
+      <table>
+        <th>
+          <tr>
+            <th>Store ID</th>
+            <th>Store Name</th>
+            <th>Store Address</th>
+            <th>Store Phone Number</th>
+            <th>Subscription Status</th>
+          </tr>
+        </th>
+        <tb>
+          <tr>
+            <td>1</td>
+            <td>Store 1</td>
+            <td>123 Main Street</td>
+            <td>555-1234</td>
+            <td>Active</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Store 2</td>
+            <td>456 Elm Street</td>
+            <td>555-5678</td>
+            <td>Cancelled</td>
+          </tr>
+        </tb>
+      </table>
+    </div>
+
+    <!-- Footer - Begin -->
+    <footer>
+      <p>&copy; SHEOUT 2023. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
