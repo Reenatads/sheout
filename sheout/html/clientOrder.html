@@ -19,40 +19,71 @@
       <img src="/sheout/html/images/shoppingCartIcon.png"/>
       </div>
     </header>
-    <br><br>
+    <br/><br/>
     <!-- Header - End -->
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">New Arrivals</a></li>
+        <li><a href="#">Clothing</a></li>
+        <li><a href="#">Shoes</a></li>
+        <li><a href="#">Accessories</a></li>
+      </ul>
+    </nav>
+    
     <div>
-        <h1>YOUR ORDER</h1>
-        <input type="button" value="Order Again">
+        <h1>YOUR ORDERS</h1>
+        <header>Old Orders</header>
     </div>
     <br/><br/>
 
-    <div>
-        <span>Blouse</span><br/>
-        <span>Qtd: 1</span><br/>
-        <span><R1>R$ 80,00</R1></span><br/><br/>
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Order Date</th>
+          <th>Item Name</th>
+          <th>Size</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td>05/10/2022</td>
+          <td>Blue Dress</td>
+          <td>M</td>
+          <td>1</td>
+          <td>$50.00</td>
+          <td><input type="button" value="Order Again"></td>
+        </tr>
+        <tr>
+          <td>12346</td>
+          <td>05/15/2022</td>
+          <td>Red Sweater</td>
+          <td>P</td>
+          <td>2</td>
+          <td>$40.00</td>
+          <td><input type="button" value="Order Again"></td>
+        </tr>
+        <tr>
+          <td>12347</td>
+          <td>05/20/2022</td>
+          <td>Black Jeans</td>
+          <td>L</td>
+          <td>1</td>
+          <td>$60.00</td>
+          <td><input type="button" value="Order Again"></td>
+        </tr>
+      </tbody>
+    </table>
 
-    <div>
-        <span>Dress</span><br/>
-        <span>Qtd: 1</span><br/>
-        <span><R1>R$ 200,00</R1></span><br/><br/>
-    </div>
-    <br/><br/>
-
-    <div>
-        <span>Shipping</span>
-        <span>R$ 15,00</span>
-    </div>
-
-    <div>
-        <span>Total</span><br/>
-        <span>R$ 295</span>
-    </div>
-    <br/><br/>
 
     <div>
         <input type="button" value="Return">
+        <input type="button" value="Log-out">
     </div>
     
     <!-- Footer - Begin -->
@@ -60,4 +91,3 @@
     <p>&copy; SHEOUT 2023. All rights reserved.</p>
     </footer>
 </body>
-</html>

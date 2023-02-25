@@ -48,6 +48,10 @@ input[type="button"]:hover {
 float: inline-start;
 }
 
+.hello-username {
+  display: flex;
+  align-items: center;
+}
 /* Layout */
 
 header img[src="/sheout/html/images/LOGO_SHEOUT.png"] {
@@ -68,6 +72,11 @@ header {
 
 header h1 {
   color: #ffffff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 nav.nav-menu {
@@ -202,6 +211,64 @@ nav.nav-menu a {
   display: flex;
   margin-bottom: 20px;
 }
+/*Table*/
+  
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  margin-right: 20px;
+  font-size: 16px;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: #dfd9d9;
+}
+
+.nav-links a:last-of-type {
+  margin-right: 0;
+}
+
+.store-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: auto;
+  background-color: #fff;
+}
+
+
 
 /*TO REVIEW
 

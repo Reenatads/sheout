@@ -13,23 +13,33 @@
           <img src="/sheout/html/images/LOGO_SHEOUT.png" />
          </a>
       </div>
-      <div>
+      <div class="hello-username">
         Hello, Username!
+      </div>
       </br>
-      <img src="/sheout/html/images/shoppingCartIcon.png">
+      <div class="nav-links">
+        <a href="#">Log-out</a>
+        <a href="#">My account</a>
+        <a href="#">My orders</a>
+      </div>
       </div>
     </header>
     <br><br>
     <!-- Header - End -->
 
-      <div class="login-container">
-        <h1>It's time for shopping!</h1>
-        <form method="post" action="">
-            <fieldset>
-                <input type="text" name="search" placeholder="I am looking for..."/>
-                <input type="button" value="Search"/>
-            </fieldset>
-        </form>
+    <div class="login-container">
+      <h1>It's time for shopping!</h1>
+      <form method="post" action="">
+        <fieldset>
+          <input type="text" name="search" placeholder="I am looking for..." />
+          <select name="order">
+            <option value="price-high">Price: High to low</option>
+            <option value="price-low">Price: Low to high</option>
+          </select>
+          <label><input type="checkbox" name="free-shipping" />Free shipping</label>
+          <input type="button" value="Search" />
+        </fieldset>
+      </form>
     </div>
 
     <nav class="nav-menu">
@@ -83,23 +93,24 @@
         </div>
     </div>
 
-    <div>
-        <h1>Coupons</h1>
-        <input type="button" value="10% Dresses"/></br>
-    </div>
-
-    <div>
-        <h1>Orders</h1>
-        <input type="Blouse" value="#01123 Summer Blouse"/></br>
-        <input type="Dress" value="#02123 Pink party dress"/></br>
-        <input type="Blouse" value="#01124 Blouse office style"/></br>
-    </div>
-
-    <div>
-        <h1>Account</h1>    
-        <input type="button" value="My account information">
-        <input type="button" value="Log-out"/>
-    </div>
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-card">
+          <img src="product-1.jpg" />
+          <h3>Product 1</h3>
+          <p>$50</p>
+        </div>
+        <div class="product-card">
+          <img src="product-2.jpg" />
+          <h3>Product 2</h3>
+          <p>$60</p>
+        </div>
+        <div class="product-card">
+          <img src="product-3.jpg" />
+          <h3>Product 3</h3>
+          <p>$70</p>
+        </div>
+      </section>
 
     <!-- Footer - Begin -->
     <footer>

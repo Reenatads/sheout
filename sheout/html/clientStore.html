@@ -22,34 +22,33 @@
     <br><br>
     <!-- Header - End -->
 
-    <div>
-        <img src="images/akStyleStoreLogo.png" />
-        <br/>
-        <span>AK Style</span>
-        <br/>
-        <span>Shipping tax: $10</span>
+    <div class="login-container">
+      <h1>It's time for shopping!</h1>
+      <form method="post" action="">
+        <fieldset>
+          <select name="order">
+            <option value="price-high">Price: High to low</option>
+            <option value="price-low">Price: Low to high</option>
+          </select>
+          <label><input type="checkbox" name="free-shipping" />Free shipping</label>
+          <input type="button" value="Search" />
+        </fieldset>
+      </form>
     </div>
 
-    <div>
-        <h1>Options</h1>
-        <fieldset>
-            <legend>Filters</legend>
-            <input type="button" name="Sale"/>
-            <input type="button" name="Blouses"/>
-            <input type="button" name="Dresses"/>
-            <input type="button" name="Skirts"/>
-            <input type="button" name="Headscarves"/>
-        </fieldset>
+    <div class="store-logo">
+        <img src="images/akStyleStoreLogo.png" />
         <br/>
+        <h1>AK Style</h1S>
     </div>
 
     <div>
         <h1>Ckeck it out:</h1>
     </div>
 
-    <div>
+      <section class="featured-products">
         <div>
-            <img src="images/blouse1.png"/>
+        <img src="#"/>
             <br/>
             <span>Blouse 001</span>
             <br/>
@@ -67,10 +66,59 @@
                 </select>
                 <br/><br/>
                 <input type="button" value="Add to cart">
-                <input type="button" value="Return">
             </form>
         </div>
-    </div>
+
+        <div>
+          <img src="#"/>
+              <br/>
+              <span>Blouse 001</span>
+              <br/>
+              <span>Unique size</span>
+              <br/>
+              <span>R$ 80,00</span>
+              <form method="post" action="">
+                  <label for="quantity">Quantity: </label>
+                  <br/>
+                  <select name="quantity" id="quantity">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                  </select>
+                  <br/><br/>
+                  <input type="button" value="Add to cart">
+              </form>
+          </div>
+
+          <div>
+            <img src="#"/>
+                <br/>
+                <span>Blouse 001</span>
+                <br/>
+                <span>Unique size</span>
+                <br/>
+                <span>R$ 80,00</span>
+                <form method="post" action="">
+                    <label for="quantity">Quantity: </label>
+                    <br/>
+                    <select name="quantity" id="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                    <br/><br/>
+                    <input type="button" value="Add to cart">
+                </form>
+            </div>
+      </section>
+      <br/><br/>
+
+      <input type="button" value="Return">
+
+
+
     <!-- Footer - Begin -->
     <footer>
         <p>&copy; SHEOUT 2023. All rights reserved.</p>
